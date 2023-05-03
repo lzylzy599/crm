@@ -46,6 +46,7 @@ public class UserController extends BaseController {
 
         // 调用service层登录方法
         UserModel userModel = userService.userLogin(userName, userPwd);
+        System.out.println(userModel);
 
         // 设置ResultInfo的result的值 （将数据返回给请求）
         resultInfo.setResult(userModel);
